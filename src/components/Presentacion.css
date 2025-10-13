@@ -1,0 +1,156 @@
+ .presentacion {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../assets/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Contenedor general */
+.presentacion-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2c2c2c;
+}
+
+/* 🌿 Foto redonda grande con doble borde dorado */
+.presentacion-foto {
+  width: 300px; /* un poco más grande para resaltar */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  outline: 5px solid #fff; /* 🔸 tono dorado elegante */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0px;
+  background-color: #fff;
+  transition: transform 0.3s ease
+}
+
+/* ✨ Nombres */
+.presentacion-nombres {
+  font-family: "Great Vibes", sans-serif;
+  font-size: 48px; /* más grande */
+  font-weight: 600; /* en negrita */
+  line-height: 50px;
+  color: rgb(51, 51, 51);
+  outline-color: rgb(51, 51, 51);
+  
+
+}
+
+.texto-biblico {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  display: block;
+  margin: 10px auto 0 auto; /* menos espacio para unir con el h2 */
+  font-size: 25px;
+  font-weight: 650; /* solo para el texto principal */
+  font-style: italic;
+  color: rgb(69, 69, 69);
+  line-height: 40px;
+  max-width: 900px;
+  width: 90%;
+}
+
+.texto-biblico span {
+  font-weight: 400; /* normal, sin negrita */
+  display: block;
+  margin-top: 5px; /* un poquito de separación */
+  font-style: italic; /* mantiene cursiva */
+}
+
+.btn-calendario {
+  display: inline-block;
+  background-color: rgb(143, 138, 97);
+  color: white;
+  border: none;
+  padding: 18px 30px;
+  border-radius: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top:3rem;
+  box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-calendario:hover {
+  background-color: #8c7a5c;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .presentacion-contenido{
+    position: relative;
+  }
+  
+  .presentacion-foto {
+    position: relative;
+    top: -280px; /* sobresale hacia arriba */
+    transform: translateY(-20px);
+    z-index: 5; /* se asegura de quedar por encima */
+  }
+   .presentacion-nombres {
+    margin-top: -250px; /* un poquito más arriba */
+    font-size: 48px;
+    line-height: 40px;
+
+    font-family: "Great Vibes", sans-serif;
+  font-size: 48px; /* más grande */
+  font-weight: 600; /* en negrita */
+  line-height: 50px;
+  color: rgb(51, 51, 51);
+  outline-color: rgb(51, 51, 51);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  }
+  .texto-biblico {
+    font-size: 18px;
+    font-weight: 600; /* en negrita */
+    line-height: 1.6;
+    margin-top: 5px;
+  }
+
+  .texto-biblico span {
+  font-weight: 400; /* normal, sin negrita */
+  display: block;
+  margin-top: 5px; /* un poquito de separación */
+  font-style: italic; /* mantiene cursiva */
+}
+
+.btn-calendario {
+  display: inline-block;
+  background-color: rgb(143, 138, 97);
+  color: white;
+  border: none;
+  padding: 23px 20px;
+  border-radius: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 3rem;
+  box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-calendario:hover {
+  background-color: #8c7a5c;
+  transform: translateY(-2px);
+}
+}
+
+
+
+
+

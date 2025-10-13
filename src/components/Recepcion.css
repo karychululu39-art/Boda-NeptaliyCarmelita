@@ -1,0 +1,241 @@
+.recepcion {
+  background-color: #f8f6f2;
+  background-image: url("../assets/fondo.jpg"); /* Opcional: textura floral */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  color: #333;
+  justify-content: center;
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.detalle {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-weight: 700;
+  color: #555;
+  line-height: 29.6px;
+  text-align: left;
+  text-transform: none;
+  margin: 6px 0;
+}
+
+
+.texto {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+
+.titulo {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  font-weight: 700;
+  color: #333333e5;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-transform: none;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.texto p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgba(143, 138, 97) !important; 
+  color: white;
+  padding: 20px 45px !important;
+  font-size: 16px;
+  margin-top: 25px;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+  box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  background-color: #7f7258;
+}
+
+.imagen {
+  flex: 1;
+  min-width: 300px;
+}
+
+.imagen img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.fila.imagen-izquierda {
+  flex-direction: row-reverse; 
+
+}
+
+.fila .texto { 
+  flex: 1;
+  max-width: 500px;
+}
+
+.fila .imagen {
+  flex: 1;
+}
+
+.fila .imagen img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.encabezado-itinerario {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.titulo-seccion {
+  font-family: "Great Vibes", cursive;
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.subtexto-seccion {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #555;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  /* Ya tienes otros estilos aquí, puedes pegarlo al final */
+
+  /*  Invertimos el orden solo en móviles  */
+  .fila.imagen-izquierda {
+    flex-direction: column; /* 👈 en lugar de row-reverse */
+  }
+
+  .fila.imagen-izquierda .imagen {
+    order: 1; /* 👈 sube la imagen */
+    margin-bottom: 25px;
+  }
+
+  .fila.imagen-izquierda .texto {
+    order: 2; /* 👈 baja el texto */
+  }
+
+  /* Opcional: hacemos la imagen más ancha y centrada */
+  .fila.imagen-izquierda .imagen img {
+    width: 100%;
+    border-radius: 18px;
+  }
+
+  .titulo-seccion {
+  font-family: "Great Vibes", cursive;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+  /* Un poco más de aire visual */
+  .recepcion {
+    padding-top: 50px;
+  }
+
+  .subtexto-seccion {
+    margin-bottom: 25px;
+  }
+
+  .titulo {
+  font-family: "Great Vibes", cursive;
+  font-size: 32px;
+  font-weight: 800;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-transform: none;
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+ /* 2️⃣ SEGUNDO BLOQUE (Recepción) */
+  .contenedor > .texto:nth-of-type(2) {
+    order: 2; /* Texto después */
+  }
+
+  .contenedor > .imagen:last-of-type {
+    order: 1; /* Imagen primero */
+    margin-bottom: 25px;
+  }
+
+  /* 3️⃣ Ajustes visuales */
+  .imagen img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .texto {
+    text-align: left;
+  }
+
+  .recepcion {
+    padding-top: 60px;
+  }
+
+  .subtexto-seccion {
+    margin-bottom: 25px;
+  }
+
+  .btn {
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgba(143, 138, 97);
+  color: white;
+  padding: 20px 45px;
+  margin-top: 25px;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+  box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  background-color: #7f7258;
+}
+}

@@ -1,0 +1,22 @@
+.contador {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  color: white;
+}
+
+.bloque {
+  text-align: center;
+}
+
+.numero {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.texto {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+ opacity: 0.8;
+}
