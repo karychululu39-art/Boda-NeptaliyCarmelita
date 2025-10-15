@@ -43,6 +43,10 @@ const EventoInfo = () => {
           <p className="evento-card__text">
             Confirmación necesaria a la brevedad posible, lo apreciaremos mucho.
           </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScOWB4_Z1SP8c010PzlrXB2-QL8AOYnYLtA4T2LJOBOoWA7cg/viewform?usp=dialog" target="_blank" 
+            rel="noopener noreferrer" className="btn" > 
+            Confirmar asistencia 
+          </a>
         </div>
       </div>
     </section>

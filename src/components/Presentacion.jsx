@@ -1,6 +1,6 @@
 import React from "react";
 import "./Presentacion.css";
-import parejaImg from "../assets/Diseño.png"; // 🔹 Usa tu imagen redonda aquí
+import parejaImg from "../assets/Diseño2.png"; // 🔹 Usa tu imagen redonda aquí
 import { FaCalendarAlt } from "react-icons/fa";
 
 const Presentacion = () => {
@@ -11,7 +11,7 @@ const Presentacion = () => {
         alt="Pareja" 
         className="presentacion-foto" />
   <h2 className="presentacion-nombres">
-    Carmelita <br /> & <br /> Neptali
+    Carmen <br /> & <br /> Neptali
   </h2>
   <p className="texto-biblico">
     'El agua de todos los mares no podría apagar el amor; tampoco los ríos podrían extinguirlo. Si alguien ofreciera todas sus riquezas a cambio del amor, burlas tan solo recibiría.'

@@ -23,7 +23,7 @@ return (
 </div> 
 {/*segunda sección */}
 <h3 className="tarjeta__title">Amazon</h3> 
-<p  className="tarjeta__text">Evento: Neptali y Carmelita</p> 
+<p  className="tarjeta__text">Evento: Neptali y Carmen</p> 
 <a href="https://www.amazon.com.mx/wedding/registry/162QTQHJF3LDK" target="_blank" 
 rel="noopener noreferrer" className="btn" > 
 Ir a la mesa 

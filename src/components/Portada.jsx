@@ -31,7 +31,7 @@ const Portada = () => {
     >
       <div className="portada-overlay" />
       <div className="portada-contenido" style={{ opacity }}>
-        <h3 className="portada-fecha">28 / Noviembre / 2024</h3>
+        <h3 className="portada-fecha">28 / Noviembre / 2025</h3>
         <br /> <br />
         <h1 className="portada-titulo">¡Nuestra Boda!</h1>
         <Contador fechaObjetivo="2025-11-28T00:00:00" />
