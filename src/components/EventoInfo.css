@@ -96,7 +96,7 @@
 
   /* 2️⃣ Crea la portada superior con la imagen */
   .evento-info__portada {
-    background-image: url("../assets/ellos.jpg");
+    background-image: url("../assets/collage2.jpg");
     background-size: cover;
     background-position: center;
     height: 410px;
